@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames</title>
+    <style>
+        @keyframes rotateBtn1 {
+            0% {
+                margin-top: -100vh;
+                transform: rotateX(0deg);
+            }
+
+            30% {
+                margin-top: -20vh;
+                transform: rotateY(0deg);
+
+            }
+
+            60% {
+                margin-top: -10vh;
+                transform: rotateZ(360deg);
+            }
+
+
+        }
+
+        form {
+            border: 2px solid gray;
+            max-width: auto;
+            max-height: auto;
+            width: 300px;
+            height: auto;
+            position: absolute;
+            /* transform: translate(40vw, 30vh); */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: #fff;
+        }
+
+        * {
+            margin: 10px;
+        }
+
+        button {
+            animation: rotateBtn 1s normal 500ms infinite;
+            border: 1px solid wheat;
+            border-radius: 5px;
+            /* position: absolute; */
+            height: auto;
+        }
+
+        /* .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 100vh;
+            background-color: aqua;
+            border: 2px solid gray;
+        } */
+         .item{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid gray;
+
+         }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <form class="item">
+            <h1>Login Page</h1>
+            <label for="">Email Id</label><br>
+            <input type="email" placeholder="Enter your email" required> <br>
+            <label for="">Password</label><br>
+            <input type="password" placeholder="Enter password"><br>
+            <button type="submit">LoGin</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

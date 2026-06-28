@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h3>Customer Information</h3>
+        <label for="fullnameid">Customer Name</label>
+        <input type="text" name="Enter your full name" id="fullnameid" placeholder="Enter your full name">
+        
+        <label for="emailid">Email Address</label>
+        <input type="email" name="email" id="emailid" placeholder="Enter your email addres"><br>
+        <br>
+        
+        <label for="numberid">Phone Number</label>
+        <input type="number" name="phonenumber" id="numberid" placeholder="Enter your phone number (optional">
+        <br><br>
+        <h3>Order and Product Details</h3>
+         <label for="order-numberid">Order Number / Invoice Number</label>
+        <input type="number" name="order-number" id="order-numberid" placeholder="Enter your order or invoice number">
+
+        <label for="dateid">Date of Purchase</label>
+        <input type="date" name="date" id="dateid" placeholder="Select the purchase date"> <br><br>
+
+         <label for="productid">Product Name</label>
+        <input type="text" name="product" id="productid" placeholder="Enter the product name">
+         
+         <label for="modelnumberid">Product SKU or Model Number</label>
+        <input type="number" name="modelnumber" id="modelnumberid" placeholder="Enter the SKU or model number"> <br><br>
+
+         <label for="quantityid">Quantity Being Returned</label>
+        <input type="number" name="quantity" id="quantityid" placeholder="Enter the quantity "> 
+
+        <label for="reasonid">Reason for Return</label>
+        <select name="reason" id="reasonid">
+            <option value="defective">Defective Product</option>
+            <option value="shipped">Wrong Item Shipped</option>
+            <option value="described">Not as Described</option>
+            <option value="other">Other</option>
+        </select>
+        <p>Is the Item Opened or Used? <br>
+            <input type="checkbox">Yes
+            <input type="checkbox">No
+        </p>
+        <label for="resolutionid">Preferred Resolution</label>
+        <select name="resolution" id="resolutionid">
+            <option value="replacement">Replacement</option>
+            <option value="refund">Refund</option>
+            <option value="repair">Repair</option>
+            <option value="storecredit">Store Credit</option>
+        </select><br>
+         
+        <label for="fileid">Upload Photos of the Item</label>
+        <input type="file" name="file" id="fileid" placeholder="Add a Link after uploading files to Google Drive, Dropbox, etc."><br><br>
+
+        <h3>Return Details</h3>
+        <p>Return Shipping Address (if needed)</p>
+        <textarea rows="5" cols="80" placeholder="Enter return shipping address(optional)"></textarea>
+
+         
+        <p>Additional Comments or Special Instructions</p>
+        <textarea rows="5" cols="80" placeholder="any other details or notes"></textarea><br>
+
+        <input type="checkbox">Acknowledgment of Return Policy
+         <p>I Have read and agree to the return policy.</p>
+
+         <button type="submit" style="background-color: #24394c; color: white;">Submit</button>
+    </form>
+</body>
+</html>

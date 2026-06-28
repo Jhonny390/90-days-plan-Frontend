@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Web Forms</title>
+</head>
+<body>
+    <form>
+        <label for="firstnameid">First Name:</label>
+        <input type="text" autocomplete="on" tabindex="0"  name="firstname" required  id="firstnameId" placeholder="Enter Your Name">
+        <input type="url" required placeholder="enter url">
+        <input type="email" placeholder="Enter Your email">
+        <input type="number" min="16" max="80" required placeholder="age">
+        <input type="tel" pattern="[0-9]{10}"  required   placeholder="Enter Your Phone Number">
+        <input type="date" placeholder="enter select date">
+        <input type="datetime" required  placeholder="enter datetime">
+        <input type="datetime-local" placeholder="enter datetime local">
+
+        <select hidden>
+            <optgroup>
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+                <option value="javascript">Javascript</option>
+                <option value="typescript">TypeScript</option>
+            </optgroup>
+        </select>
+        <p contenteditable="true">This is para</p>
+         
+        <input list="courses" placeholder="select courses">
+        <datalist id="courses">
+                <option value="Python">Python</option>
+                <option value="SQL">SQL</option>
+                <option value="Javascript">Javascript</option>
+                <option value="TypeScript">TypeScript</option>
+        </datalist>
+        <button>Button</button>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        p::after{
+           content:" This is Paragraph Heading!";
+           display: block;
+           color: blue;
+        }
+        p::before{
+            content: "This is a Pseudo Element";
+            display: block;
+            color: brown;
+        }
+
+        input::placeholder{
+            color: rgb(39, 29, 183);
+        }
+
+        p::selection{
+            background-color: antiquewhite;
+        }
+
+        p::first-line{
+            color: rgb(0, 255, 26);
+        }
+
+        p::first-letter{
+            background-color: coral;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil minima obcaecati dignissimos? Enim non blanditiis, asperiores ducimus dicta nesciunt minus placeat vel consequatur? Temporibus sit et ducimus id enim. Magnam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi sint perferendis quo exercitationem illo. Eius magnam obcaecati, mollitia eaque et explicabo alias perferendis autem cum reprehenderit consectetur sint unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eaque iure corrupti sunt maxime quis quaerat maiores voluptatum ducimus impedit repellendus nesciunt autem id, consectetur quidem, cumque accusantium porro? Illum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nulla? Facere architecto doloribus aut reprehenderit aliquid hic quos modi magni, magnam iure mollitia eligendi praesentium sint quidem quis, exercitationem amet?
+    </p>
+
+    <input type="text" placeholder="Enter Your name">
+</body>
+</html>

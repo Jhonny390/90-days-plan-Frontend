@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COMBINATORS</title>
+    <style>
+        /*  
+        div p {}
+        div >p {}
+        div +p {}
+        div ~ p {}
+
+         */
+        div+p {
+            color: red;
+        }
+
+        div~p {
+            padding: 30px;
+        }
+
+        div>p {
+            color: aqua;
+        }
+
+        div p{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, odit fuga vel facere, doloremque animi laboriosam eum debitis non dicta, labore maxime tempore. Ad numquam amet incidunt officia repellendus labore.</p>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam porro ea repellendus doloribus ab maiores,
+            necessitatibus perferendis vero, eius quia totam unde ipsum laborum sint deleniti iure. Quo, delectus
+            tenetur?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut fugit aliquam excepturi cumque culpa,
+            laudantium aperiam esse architecto id rem sapiente vitae facere sit quaerat, repellat modi possimus!
+            Incidunt, corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id libero quia doloremque saepe,
+            voluptatibus in rem dolore vel mollitia facere, suscipit dolores, fugit totam. Ab necessitatibus at vero
+            incidunt!
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum sint illo ducimus fugit pariatur, quasi
+            ipsam debitis in omnis. Sapiente eligendi eos est et earum quidem quaerat vel non!
+        </p>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo assumenda voluptatem perspiciatis autem animi odit unde repellat voluptatibus, aperiam soluta architecto praesentium corrupti aspernatur voluptas totam nobis laudantium eos voluptate?</p>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eos provident ducimus, totam accusamus
+        quaerat corrupti? Ex nobis expedita delectus similique temporibus cumque facere sapiente. Rem voluptas eveniet
+        unde perferendis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam consequuntur vero vitae, pariatur ipsa
+        eaque repellat! Asperiores, facere provident. Ullam veniam alias consequatur blanditiis quaerat ipsa suscipit
+        maxime molestiae!
+    </p>
+</body>
+
+</html>
